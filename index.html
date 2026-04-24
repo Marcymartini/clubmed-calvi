@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club Med Calvi – La Chiapa | Exclusive Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0d1b3e;
+  --deep-blue: #1a2f5a;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --sea: #2e7fa8;
+  --sea-light: #5ba3c4;
+  --sand: #f5ede0;
+  --sand-dark: #e8d9c4;
+  --maquis: #3d6b48;
+  --white: #fdfaf6;
+  --text-dark: #1a1a2e;
+  --text-mid: #4a4a6a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 72px;
+  background: rgba(13, 27, 62, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-logo span {
+  color: rgba(255,255,255,0.6);
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+/* ─── HERO ─── */
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--navy) 0%, #0a2040 40%, #1a4060 70%, #0d3a5a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% 120%, rgba(46,127,168,0.3) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 0%, rgba(201,168,76,0.08) 0%, transparent 50%);
+}
+
+.hero-waves {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hero-waves svg { width: 100%; height: 100%; }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  padding: 2rem;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-trident {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: block;
+  animation: fadeUp 1.2s 0.2s ease both;
+}
+
+.hero-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 1.2s 0.3s ease both;
+  display: block;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 300;
+  color: white;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  animation: fadeUp 1.2s 0.4s ease both;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: rgba(255,255,255,0.65);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1.2s 0.5s ease both;
+}
+
+.hero-slogan {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  animation: fadeUp 1.2s 0.6s ease both;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1.2s 0.7s ease both;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 1rem 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ─── OUVERTURE BANNER ─── */
+.opening-banner {
+  background: var(--gold);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.opening-banner p {
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--navy);
+  font-weight: 500;
+}
+
+/* ─── INTRO SECTION ─── */
+.intro-section {
+  padding: 7rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.section-eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--sea);
+}
+
+.section-body {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+
+.atouts-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.atout-card {
+  padding: 2rem;
+  background: var(--sand);
+  border-left: 3px solid var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.atout-card:hover { transform: translateX(6px); }
+
+.atout-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: var(--gold);
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.atout-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.atout-desc {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ─── DIVIDER ─── */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto 4rem;
+  max-width: 300px;
+}
+
+.gold-divider::before, .gold-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+.gold-divider span {
+  color: var(--gold);
+  font-size: 1.2rem;
+}
+
+/* ─── VILLAGE SECTION ─── */
+.village-section {
+  background: var(--navy);
+  padding: 8rem 3rem;
+  color: white;
+}
+
+.village-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.village-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.village-header .section-title { color: white; }
+.village-header .section-title em { color: var(--gold-light); }
+
+.village-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 6rem;
+}
+
+.village-card {
+  background: rgba(255,255,255,0.05);
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(201,168,76,0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.village-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.village-card:hover::before { transform: scaleX(1); }
+.village-card:hover { background: rgba(255,255,255,0.08); }
+
+.card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gold-light);
+  margin-bottom: 0.8rem;
+}
+
+.card-text {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ─── ACTIVITIES BAND ─── */
+.activities-band {
+  background: var(--sand);
+  padding: 6rem 3rem;
+}
+
+.activities-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activities-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.activities-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.activity-pill {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: white;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.activity-pill:hover {
+  border-bottom-color: var(--sea);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.activity-emoji { font-size: 2rem; margin-bottom: 1rem; display: block; }
+
+.activity-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.activity-desc {
+  font-size: 0.78rem;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+
+/* ─── RSE SECTION ─── */
+.rse-section {
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.rse-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.rse-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.rse-text h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.rse-text p {
+  font-size: 0.83rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ─── SOCIAL MEDIA ─── */
+.social-section {
+  background: #0a1628;
+  padding: 8rem 3rem;
+  color: white;
+}
+
+.social-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.social-header .section-title { color: white; }
+
+.social-platforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.platform-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.platform-card:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+
+.platform-icon { font-size: 3rem; margin-bottom: 1.5rem; display: block; }
+
+.platform-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.platform-handle {
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.platform-desc {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.platform-link {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 0.7rem 2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.platform-link:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.social-embed-zone {
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(255,255,255,0.15);
+  padding: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.embed-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 0.5rem;
+}
+
+.embed-placeholder {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.cs-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.cs-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: var(--gold);
+  font-weight: 300;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cs-text {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* ─── COMMUNIQUÉ DE PRESSE ─── */
+.press-section {
+  padding: 8rem 3rem;
+  background: var(--sand);
+}
+
+.press-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.press-doc {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 20px 80px rgba(0,0,0,0.08);
+}
+
+.press-header-bar {
+  background: var(--navy);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.press-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 400;
+}
+
+.press-brand span { color: var(--gold); }
+
+.press-tag {
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+}
+
+.press-embargo {
+  background: #fff3cd;
+  border: 1px solid #f0c040;
+  margin: 2rem 3rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  color: #7a5a00;
+  font-weight: 500;
+}
+
+.press-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 0 3rem 2.5rem;
+}
+
+.press-meta div {
+  padding: 1rem 1.5rem;
+  font-size: 0.78rem;
+  color: var(--text-mid);
+}
+
+.press-meta div:not(:last-child) { border-right: 1px solid #eee; }
+
+.press-meta strong {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #aaa;
+  margin-bottom: 0.2rem;
+}
+
+.press-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--navy);
+  padding: 0 3rem 1.5rem;
+  line-height: 1.3;
+}
+
+.press-chapeau {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  padding: 0 3rem 2rem;
+  line-height: 1.7;
+  border-bottom: 1px solid #eee;
+}
+
+.press-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2.5rem 3rem;
+  gap: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.press-stat {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.press-stat:not(:last-child) { border-right: 1px solid #eee; }
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--navy);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #999;
+  letter-spacing: 0.1em;
+}
+
+.press-body {
+  padding: 2.5rem 3rem;
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+}
+
+.press-body p { margin-bottom: 1.2rem; }
+
+.press-quote {
+  border-left: 3px solid var(--navy);
+  padding: 1.2rem 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--navy);
+  background: var(--sand);
+}
+
+.press-contact {
+  background: var(--navy);
+  margin: 0 3rem 3rem;
+  padding: 2rem;
+}
+
+.press-contact h4 {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.press-contact p {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.press-footer {
+  padding: 1.5rem 3rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #bbb;
+}
+
+.press-download-btn {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* ─── INVITATIONS ─── */
+.invitations-section {
+  padding: 8rem 3rem;
+  background: white;
+}
+
+.invitations-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.invitation-opening {
+  background: var(--navy);
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.invitation-opening .section-eyebrow { color: var(--gold); }
+.invitation-opening .section-title { color: white; margin-bottom: 1rem; }
+
+.invitation-opening p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.emails-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.email-card {
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.email-card:hover {
+  box-shadow: 0 12px 50px rgba(0,0,0,0.1);
+}
+
+.email-header {
+  background: var(--navy);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-type {
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201,168,76,0.15);
+  padding: 0.3rem 0.8rem;
+}
+
+.email-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.email-body {
+  padding: 2rem;
+}
+
+.email-subject {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.3rem;
+}
+
+.email-to {
+  font-size: 0.78rem;
+  color: var(--text-mid);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.email-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.email-content p {
+  font-size: 0.83rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.email-highlight {
+  background: var(--sand);
+  border-left: 3px solid var(--gold);
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--navy);
+  margin: 1.2rem 0;
+}
+
+.email-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin: 1rem 0;
+}
+
+.email-meta-grid div {
+  background: #f8f8f8;
+  padding: 0.7rem 1rem;
+}
+
+.email-meta-grid strong {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  margin-bottom: 0.2rem;
+}
+
+.email-cta {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.copy-btn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Jost', sans-serif;
+}
+
+.copy-btn:hover { background: var(--deep-blue); }
+
+.brochure-section {
+  background: var(--sand);
+  padding: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.brochure-text h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.brochure-text p {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.brochure-preview {
+  background: var(--navy);
+  aspect-ratio: 3/4;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ─── PROGRAMME D'INAUGURATION ─── */
+.programme-section {
+  background: var(--navy);
+  padding: 8rem 3rem;
+  color: white;
+}
+
+.programme-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.programme-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.programme-header .section-title { color: white; }
+.programme-header .section-title em { color: var(--gold-light); }
+
+.programme-actes {
+  position: relative;
+}
+
+.programme-actes::before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: rgba(201,168,76,0.25);
+}
+
+.acte-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.acte-time {
+  text-align: right;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.acte-time::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--navy);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+.time-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--gold);
+  font-weight: 300;
+  display: block;
+}
+
+.time-sub {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.1em;
+}
+
+.acte-content {
+  padding-top: 0.2rem;
+}
+
+.acte-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.acte-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.acte-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+/* ─── CONTACT ─── */
+.contact-section {
+  padding: 8rem 3rem;
+  background: var(--sand);
+}
+
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.contact-info .section-eyebrow { text-align: left; }
+
+.contact-detail {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+}
+
+.contact-detail-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.contact-detail-text h4 {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.2rem;
+}
+
+.contact-detail-text p {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  font-weight: 300;
+}
+
+.contact-map {
+  background: var(--navy);
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-map::before {
+  content: '📍';
+  position: absolute;
+  font-size: 2rem;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  background: white;
+  border: 1px solid #e0e0e0;
+  padding: 1rem 1.2rem;
+  font-size: 0.85rem;
+  font-family: 'Jost', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--navy);
+}
+
+.contact-form textarea { height: 130px; resize: none; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-row input { margin-bottom: 0; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: #080f1f;
+  color: white;
+  padding: 5rem 3rem 2rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.footer-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col h5 {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover { color: var(--gold-light); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.25);
+}
+
+.footer-disclaimer {
+  font-style: italic;
+  color: rgba(255,255,255,0.2);
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .intro-section { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
+  .village-grid { grid-template-columns: 1fr 1fr; }
+  .activities-row { grid-template-columns: 1fr 1fr; }
+  .social-platforms { grid-template-columns: 1fr; }
+  .emails-grid { grid-template-columns: 1fr; }
+  .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .press-meta { grid-template-columns: 1fr; }
+  .press-stats { grid-template-columns: 1fr; }
+  .coming-soon-grid { grid-template-columns: repeat(3,1fr); }
+  .rse-grid { grid-template-columns: 1fr; }
+  .brochure-section { grid-template-columns: 1fr; }
+  .acte-item { grid-template-columns: 80px 1fr; }
+  .programme-actes::before { left: 40px; }
+  .press-title { font-size: 1.4rem; }
+  .press-header-bar { padding: 1.5rem; }
+  .press-body { padding: 1.5rem; }
+  .press-contact { margin: 0 1.5rem 1.5rem; }
+  .press-embargo { margin: 1.5rem; }
+  .press-meta { margin: 0 1.5rem 1.5rem; }
+  .press-stats { padding: 1.5rem; }
+  .press-title { padding: 0 1.5rem 1rem; }
+  .press-chapeau { padding: 0 1.5rem 1.5rem; }
+  .press-footer { padding: 1rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#hero" class="nav-logo">Club Med ψ <span>Calvi – La Chiapa</span></a>
+  <ul class="nav-links">
+    <li><a href="#village">Le Village</a></li>
+    <li><a href="#social">Réseaux</a></li>
+    <li><a href="#presse">Presse</a></li>
+    <li><a href="#invitations">Invitations</a></li>
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-trident">ψ</span>
+    <span class="hero-eyebrow">Exclusive Collection · Ouverture Juin 2028</span>
+    <h1 class="hero-title">Club Med<br><em>Calvi – La Chiapa</em></h1>
+    <p class="hero-subtitle">Le retour du Trident sur l'Île de Beauté</p>
+    <p class="hero-slogan">L'évasion corse, entre mer, maquis et art de vivre</p>
+    <div class="hero-btns">
+      <a href="#village" class="btn-primary">Découvrir le village</a>
+      <a href="#invitations" class="btn-outline">Voir l'invitation</a>
+    </div>
+  </div>
+  <div class="hero-waves">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <path fill="#fdfaf6" d="M0,100 C360,180 720,20 1080,100 C1260,140 1380,80 1440,60 L1440,200 L0,200 Z" opacity="0.08"/>
+      <path fill="#fdfaf6" d="M0,140 C400,60 800,200 1200,120 C1320,95 1400,120 1440,130 L1440,200 L0,200 Z" opacity="0.06"/>
+    </svg>
+  </div>
+</section>
+
+<!-- OPENING BANNER -->
+<div class="opening-banner">
+  <p>✦ &nbsp; Inauguration prévue les 12 – 14 juin 2028 · Calvi, Balagne, Corse &nbsp; ✦</p>
+</div>
+
+<!-- INTRO -->
+<section style="padding: 8rem 3rem 4rem;">
+  <div style="max-width:1200px; margin:0 auto; text-align:center; margin-bottom:4rem;">
+    <span class="section-eyebrow">Un retour stratégique en Corse</span>
+    <h2 class="section-title" style="max-width:700px;margin:0 auto 1.5rem;">Un resort <em>d'exception</em><br>au cœur de la pinède de Calvi</h2>
+    <p class="section-body" style="max-width:650px;margin:0 auto;">Après plusieurs années d'absence sur l'Île de Beauté, le Club Med inaugure un village éco-conçu de 70 bungalows au cœur de la pinède de Calvi, alliant luxe responsable, gastronomie locale et respect strict de la loi Littoral.</p>
+  </div>
+
+  <div class="intro-section" style="padding-top:0;">
+    <div>
+      <span class="section-eyebrow">Le projet</span>
+      <h2 class="section-title">La Chiapa,<br><em>village de demain</em></h2>
+      <p class="section-body">Implanté sur l'ancien site du camping La Pinède, à moins de 15 minutes de l'aéroport de Calvi-Sainte-Catherine, le resort a été pensé comme un modèle de tourisme durable haut de gamme, en parfaite conformité avec la loi Littoral du 3 janvier 1986.</p>
+      <br>
+      <p class="section-body">70 bungalows éco-construits en bois et pierre de Balagne. 80% de produits locaux en restauration. Un investissement foncier de 15 M€ pour une expérience à partir de 2 000€ / personne / semaine tout compris.</p>
+    </div>
+    <div class="atouts-grid">
+      <div class="atout-card">
+        <div class="atout-num">01</div>
+        <div class="atout-title">Resort éco-luxe en bord de mer</div>
+        <div class="atout-desc">70 bungalows bioclimatiques en pierre et bois de Balagne, intégrés sous la pinède centenaire avec vue mer ou maquis.</div>
+      </div>
+      <div class="atout-card">
+        <div class="atout-num">02</div>
+        <div class="atout-title">Expériences corses authentiques</div>
+        <div class="atout-desc">Gastronomie du terroir (80% produits locaux), polyphonies, plongée en Méditerranée, randonnées dans le maquis et cinéma en plein air.</div>
+      </div>
+      <div class="atout-card">
+        <div class="atout-num">03</div>
+        <div class="atout-title">Pour familles, couples et groupes</div>
+        <div class="atout-desc">Kids Club, Mini Disco, White Party, yoga face à la mer et activités nautiques — un programme riche pour chaque âge et profil.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VILLAGE -->
+<section id="village" class="village-section">
+  <div class="village-inner">
+    <div class="village-header">
+      <span class="section-eyebrow" style="color:var(--gold);">Le Village · Exclusive Collection</span>
+      <h2 class="section-title">Un <em>écrin naturel</em> de 15 espaces distincts</h2>
+      <p class="section-body" style="max-width:600px;margin:1rem auto 0;color:rgba(255,255,255,0.55);">Chaque infrastructure a été conçue pour s'intégrer harmonieusement sous la pinède centenaire, invisible depuis la mer, en parfaite cohérence avec la loi Littoral.</p>
+    </div>
+
+    <div class="village-grid">
+      <div class="village-card">
+        <div class="card-icon">🏡</div>
+        <div class="card-title">70 Bungalows Premium</div>
+        <div class="card-text">Construits en bois et pierre de Balagne, orientés mer ou pinède. Toits végétalisés, architecture basse, matériaux biosourcés. Répartis en petits hameaux pour préserver l'intimité.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🍽️</div>
+        <div class="card-title">Deux Restaurants</div>
+        <div class="card-text">Un buffet à volonté (6h–22h) avec une sélection des produits AOP de la Balagne, et un restaurant bistronomique mettant à l'honneur la gastronomie corse raffinée.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🌊</div>
+        <div class="card-title">Piscines Naturelles</div>
+        <div class="card-text">Deux piscines biologiques, sans chlore, intégrées visuellement dans le maquis environnant. Système de filtration naturelle, eaux pluviales récupérées pour l'entretien.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🧘</div>
+        <div class="card-title">Spa Naturel & Yoga</div>
+        <div class="card-text">Spa naturel avec soins signature aux essences du maquis corse. Salle de yoga en plein air sur plateformes amovibles en bois certifié face à la Méditerranée.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🎬</div>
+        <div class="card-title">Cinéma en Plein Air</div>
+        <div class="card-text">Projections sous les étoiles avec casques audio sans fil (concept Silent Cinema) pour ne pas perturber la faune nocturne. Une expérience sensorielle unique.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">💪</div>
+        <div class="card-title">Salle de Sport</div>
+        <div class="card-text">Équipements haut de gamme avec vue panoramique sur la pinède et la mer. Cours collectifs, coaching personnalisé, yoga matinal et stretching.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🤿</div>
+        <div class="card-title">Centre de Plongée</div>
+        <div class="card-text">Plongée dans les eaux cristallines de la Méditerranée. Moniteurs certifiés, bouées écologiques sur les herbiers de Posidonie, partenariats associatifs pour nettoyage des fonds.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🚵</div>
+        <div class="card-title">Randonnée & Vélo</div>
+        <div class="card-text">Sentiers balisés dans le maquis corse pour protéger la biodiversité endémique. Parc de vélos mécaniques et électriques avec bornes solaires.</div>
+      </div>
+      <div class="village-card">
+        <div class="card-icon">🧒</div>
+        <div class="card-title">Mini Club & Mini Disco</div>
+        <div class="card-text">Kids Club « École de l'Aventure » : sorties nature, reconnaissance du maquis, spectacles enfants. Mini Disco le soir avec les G.O pour des souvenirs inoubliables.</div>
+      </div>
+    </div>
+
+    <!-- Animations section -->
+    <div class="village-header" style="margin-bottom:3rem;">
+      <span class="section-eyebrow" style="color:var(--gold);">Soirées thématiques</span>
+      <h2 class="section-title" style="font-size:2.5rem;">L'esprit Club Med <em>revisité</em></h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+      <div class="village-card" style="border-color:rgba(201,168,76,0.4);">
+        <div class="card-icon">⚪</div>
+        <div class="card-title">La White Party</div>
+        <div class="card-text">Dress code blanc obligatoire. Cocktail au coucher du soleil sur les terrasses surplombant la baie, suivi d'un buffet thématique où les produits de la mer sont à l'honneur.</div>
+      </div>
+      <div class="village-card" style="border-color:rgba(201,168,76,0.4);">
+        <div class="card-icon">🎵</div>
+        <div class="card-title">Soirée Chic & Authentique</div>
+        <div class="card-text">Dîner sous la pinède accompagné d'un groupe de chanteurs polyphoniques corses. Une immersion dans le patrimoine insulaire, solennelle et prestigieuse.</div>
+      </div>
+      <div class="village-card" style="border-color:rgba(201,168,76,0.4);">
+        <div class="card-icon">🌊</div>
+        <div class="card-title">La Beach Party</div>
+        <div class="card-text">Sur la partie concédée de la plage de Calvi, ambiance lounge avec DJs internationaux et éclairages basse consommation pour respecter la faune locale.</div>
+      </div>
+      <div class="village-card" style="border-color:rgba(201,168,76,0.4);">
+        <div class="card-icon">🕺</div>
+        <div class="card-title">Génération Trident</div>
+        <div class="card-text">Un clin d'œil nostalgique aux anciens sites de Cargèse et Sant'Ambroggio. L'esprit festif originel du Club avec une scénographie IA revisitant les années 80.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="activities-band">
+  <div class="activities-inner">
+    <div class="activities-header">
+      <span class="section-eyebrow">Tout compris</span>
+      <h2 class="section-title">Activités & <em>Expériences</em></h2>
+    </div>
+    <div class="activities-row">
+      <div class="activity-pill">
+        <span class="activity-emoji">⛵</span>
+        <div class="activity-name">Voile</div>
+        <div class="activity-desc">Dans l'une des plus belles baies de Méditerranée</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🤿</span>
+        <div class="activity-name">Plongée</div>
+        <div class="activity-desc">Eaux cristallines, herbiers de Posidonie</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🥾</span>
+        <div class="activity-name">Randonnée</div>
+        <div class="activity-desc">Sentiers balisés dans le maquis corse</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🎾</span>
+        <div class="activity-name">Tennis</div>
+        <div class="activity-desc">Cours avec moniteurs diplômés d'État</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🧘</span>
+        <div class="activity-name">Yoga & Spa</div>
+        <div class="activity-desc">Face à la mer, soin signature maquis</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🚴</span>
+        <div class="activity-name">Vélo</div>
+        <div class="activity-desc">Mécanique ou électrique, bornes solaires</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🍷</span>
+        <div class="activity-name">Dégustation</div>
+        <div class="activity-desc">Vins, fromages, charcuteries AOP de Balagne</div>
+      </div>
+      <div class="activity-pill">
+        <span class="activity-emoji">🌿</span>
+        <div class="activity-name">Immersion Nature</div>
+        <div class="activity-desc">Découverte de la biodiversité endémique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSE -->
+<section class="rse-section">
+  <div style="text-align:center;margin-bottom:1rem;">
+    <span class="section-eyebrow">Responsabilité sociétale</span>
+    <h2 class="section-title">Un luxe <em>respectueux</em><br>de son territoire</h2>
+    <p class="section-body" style="max-width:580px;margin:0 auto;">Le projet « Objectif Corse » vise à concilier développement touristique haut de gamme, respect strict des contraintes réglementaires et intégration durable dans le territoire de la Balagne.</p>
+  </div>
+  <div class="rse-grid">
+    <div class="rse-item">
+      <div class="rse-icon">🌿</div>
+      <div class="rse-text">
+        <h3>Éco-construction</h3>
+        <p>Architecture bioclimatique en bois et pierre de Balagne, toits végétalisés, structures légères et réversibles. Resort quasiment invisible depuis la mer.</p>
+      </div>
+    </div>
+    <div class="rse-item">
+      <div class="rse-icon">🌊</div>
+      <div class="rse-text">
+        <h3>Respect de la Loi Littoral</h3>
+        <p>Aucune construction lourde dans la bande des 100 mètres. Continuité de l'urbanisation. Sentier littoral préservé et libre d'accès.</p>
+      </div>
+    </div>
+    <div class="rse-item">
+      <div class="rse-icon">🧑‍🌾</div>
+      <div class="rse-text">
+        <h3>Circuits courts (80%)</h3>
+        <p>Produits des agriculteurs et artisans de la Balagne dans les restaurants. Noms des producteurs affichés sur chaque menu. Zéro plastique à usage unique.</p>
+      </div>
+    </div>
+    <div class="rse-item">
+      <div class="rse-icon">💧</div>
+      <div class="rse-text">
+        <h3>Gestion durable de l'eau</h3>
+        <p>Piscines à filtration biologique sans chlore. Récupération des eaux pluviales pour l'arrosage. Espaces verts composés exclusivement d'espèces indigènes.</p>
+      </div>
+    </div>
+    <div class="rse-item">
+      <div class="rse-icon">☀️</div>
+      <div class="rse-text">
+        <h3>Énergies renouvelables</h3>
+        <p>Panneaux solaires, bornes de recharge pour vélos électriques, éclairage basse consommation. Objectif de performance énergétique optimale.</p>
+      </div>
+    </div>
+    <div class="rse-item">
+      <div class="rse-icon">🦎</div>
+      <div class="rse-text">
+        <h3>Protection de la biodiversité</h3>
+        <p>Plan de gestion durable de la pinède. Zones sanctuaires pour espèces protégées (Tortue d'Hermann, oiseaux marins). Plongées de nettoyage des fonds marins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section id="social" class="social-section">
+  <div class="social-inner">
+    <div class="social-header">
+      <span class="section-eyebrow" style="color:var(--gold);">Stratégie digitale</span>
+      <h2 class="section-title">Réseaux <em>sociaux</em></h2>
+      <p class="section-body" style="max-width:550px;margin:1rem auto 0;color:rgba(255,255,255,0.5);">Suivez le projet Club Med Calvi en temps réel sur nos pages dédiées. Contenus exclusifs, coulisses de la construction et teasing de l'ouverture.</p>
+    </div>
+
+    <div class="social-platforms">
+      <div class="platform-card">
+        <span class="platform-icon">📸</span>
+        <div class="platform-name">Instagram</div>
+        <div class="platform-handle">@clubmedcalvi · ClubMed.Calvi</div>
+        <p class="platform-desc">Photos premium du resort, ambiances méditerranéennes, découverte des artisans de la Balagne et teasing de l'inauguration.</p>
+        <a href="https://www.instagram.com/clubmedcalvi" target="_blank" class="platform-link">Suivre sur Instagram →</a>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">🎵</span>
+        <div class="platform-name">TikTok</div>
+        <div class="platform-handle">@clubmedcalvi</div>
+        <p class="platform-desc">Vidéos immersives des travaux, découverte des activités, présentation de l'équipe G.O et avant-premières de l'inauguration.</p>
+        <a href="https://www.tiktok.com/@clubmedcalvi" target="_blank" class="platform-link">Suivre sur TikTok →</a>
+      </div>
+    </div>
+
+    <!-- Embed zones -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem;">
+      <div>
+        <div class="social-embed-zone">
+          <div class="embed-label">Intégration TikTok</div>
+          <div class="embed-placeholder">[ Insérez ici votre publication TikTok ]</div>
+          <p style="font-size:0.7rem;color:rgba(255,255,255,0.2);margin-top:1rem;">Remplacez ce bloc par le code d'embed TikTok</p>
+        </div>
+      </div>
+      <div>
+        <div class="social-embed-zone">
+          <div class="embed-label">Intégration Instagram</div>
+          <div class="embed-placeholder">[ Insérez ici votre publication Instagram ]</div>
+          <p style="font-size:0.7rem;color:rgba(255,255,255,0.2);margin-top:1rem;">Remplacez ce bloc par le code d'embed Instagram</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="section-eyebrow" style="color:var(--gold);">Contenus à venir</span>
+      <h3 class="section-title" style="font-size:2rem;color:white;">Notre <em>stratégie</em> de contenu</h3>
+    </div>
+
+    <div class="coming-soon-grid">
+      <div class="cs-item">
+        <span class="cs-num">01</span>
+        <div class="cs-text">Teasing de l'ouverture</div>
+      </div>
+      <div class="cs-item">
+        <span class="cs-num">02</span>
+        <div class="cs-text">Vidéos des travaux</div>
+      </div>
+      <div class="cs-item">
+        <span class="cs-num">03</span>
+        <div class="cs-text">Découverte des activités</div>
+      </div>
+      <div class="cs-item">
+        <span class="cs-num">04</span>
+        <div class="cs-text">Présentation de l'équipe</div>
+      </div>
+      <div class="cs-item">
+        <span class="cs-num">05</span>
+        <div class="cs-text">Soirée d'ouverture</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNIQUÉ DE PRESSE -->
+<section id="presse" class="press-section">
+  <div class="press-inner">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <span class="section-eyebrow">Relations médias</span>
+      <h2 class="section-title">Communiqué<br><em>de presse</em></h2>
+    </div>
+
+    <div class="press-doc">
+      <div class="press-header-bar">
+        <div class="press-brand">Club Med <span>ψ</span> — Exclusive Collection<br><small style="font-weight:300;font-size:0.75rem;color:rgba(255,255,255,0.5);">Service de presse & relations médias</small></div>
+        <div class="press-tag">Communiqué de presse</div>
+      </div>
+
+      <div class="press-embargo">
+        <strong>⚠️ Embargo levé le 12 juin 2028 à 18h30 — soirée d'inauguration</strong>
+      </div>
+
+      <div class="press-meta">
+        <div><strong>Date</strong>Paris, 12 juin 2028</div>
+        <div><strong>Diffusion</strong>Nationale & régionale</div>
+        <div><strong>Référence</strong>CM-CALVI-2028-01</div>
+      </div>
+
+      <h2 class="press-title">Le Club Med fait son grand retour en Corse avec l'ouverture d'un Resort Exclusive Collection à Calvi</h2>
+
+      <p class="press-chapeau"><em>Après plusieurs années d'absence sur l'Île de Beauté, le Club Med inaugure un village éco-conçu de 70 bungalows au cœur de la pinède de Calvi, alliant luxe responsable, gastronomie locale et respect strict de la loi Littoral.</em></p>
+
+      <div class="press-stats">
+        <div class="press-stat">
+          <span class="stat-num">70</span>
+          <div class="stat-label">Bungalows éco-construits</div>
+        </div>
+        <div class="press-stat">
+          <span class="stat-num">15 M€</span>
+          <div class="stat-label">Investissement foncier</div>
+        </div>
+        <div class="press-stat">
+          <span class="stat-num">80%</span>
+          <div class="stat-label">Produits locaux en restauration</div>
+        </div>
+      </div>
+
+      <div class="press-body">
+        <p><strong>UN RETOUR STRATÉGIQUE EN CORSE</strong></p>
+        <p>La Balagne, région emblématique du nord-ouest corse, accueille ce week-end du 12 au 14 juin 2028 le nouveau Resort Club Med Calvi — Exclusive Collection. Ce retour marque une étape majeure dans la stratégie de développement du groupe sur le territoire français, après la fermeture des villages historiques de Cargèse et Sant'Ambroggio.</p>
+        <p>Implanté sur l'ancien site du camping La Pinède, à moins de 15 minutes de l'aéroport de Calvi-Sainte-Catherine, le resort a été pensé comme un modèle de tourisme durable haut de gamme, en parfaite conformité avec la loi Littoral du 3 janvier 1986.</p>
+
+        <div class="press-quote">
+          "La Corse a toujours représenté quelque chose d'unique pour le Club Med. Ce retour n'est pas seulement une ouverture de Resort — c'est la reprise d'une histoire d'amour entre notre marque et l'Île de Beauté, avec l'ambition d'incarner le luxe responsable de demain."
+          <br><br><strong>— Direction Générale Europe Centrale, Club Med</strong>
+        </div>
+
+        <p><strong>UN VILLAGE ANCRÉ DANS SON TERRITOIRE</strong></p>
+        <p>Le Resort Club Med Calvi s'articule autour de 15 espaces distincts — restaurants, spa naturel, piscines biologiques, terrain de tennis, cinéma en plein air — entièrement intégrés sous une pinède centenaire. Les bungalows, construits en bois et pierre de Balagne, adoptent une architecture basse qui respecte la ligne de crête et demeure invisible depuis la mer.</p>
+
+        <p>L'engagement RSE se traduit concrètement : suppression totale du plastique à usage unique, 80% des produits issus de producteurs locaux de la Balagne, gestion durable de l'eau par récupération des eaux pluviales, et partenariats avec les associations de protection de l'écosystème marin corse.</p>
+
+        <p><strong>À PROPOS DU CLUB MED</strong></p>
+        <p>Créateur de bonheur depuis 1950, le Club Med est le leader mondial des vacances haut de gamme tout compris pour les familles et les couples actifs. Le groupe exploite un portefeuille de près de 70 Resorts Premium et Exclusive Collection dans plus de 40 pays.</p>
+
+        <p style="margin-bottom:0;"><em>[ Insérez ici votre communiqué de presse complet — remplacez ce texte par votre contenu définitif ]</em></p>
+      </div>
+
+      <div class="press-contact">
+        <h4>Contact Presse</h4>
+        <p>
+          <strong style="color:white;">Direction des relations presse — Club Med France</strong><br>
+          Email : presse@clubmed.com<br>
+          Ligne directe : +33 (0)1 53 35 35 53<br>
+          Accréditations inauguration : avant le 5 juin 2028
+        </p>
+      </div>
+
+      <div class="press-footer">
+        <span>Club Med — Resort Calvi, Exclusive Collection · Ouverture juin 2028</span>
+        <span>clubmed.fr/calvi — #ClubMedCalvi</span>
+      </div>
+    </div>
+
+    <div class="press-download-btn">
+      <a href="#" class="btn-primary" onclick="alert('Téléchargement du communiqué — remplacez ce lien par votre fichier PDF'); return false;">
+        ↓ &nbsp; Télécharger le communiqué (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INVITATIONS -->
+<section id="invitations" class="invitations-section">
+  <div class="invitations-inner">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <span class="section-eyebrow">Invitations officielles</span>
+      <h2 class="section-title">La soirée <em>d'inauguration</em></h2>
+    </div>
+
+    <div class="invitation-opening">
+      <span class="section-eyebrow">«&nbsp;A Festa di u Ritornu&nbsp;»</span>
+      <h3 class="section-title" style="font-size:2rem;">La Fête du Retour</h3>
+      <p>Vendredi 12 juin 2028 · 18h30 · Plage & Beach Bar · Club Med Calvi<br>Une soirée multi-espaces, de la plage à la pinède, pour 200 invités privilégiés.<br>Dress code : tenue de soirée élégante.</p>
+    </div>
+
+    <div style="margin-bottom:4rem;">
+      <h3 class="section-title" style="margin-bottom:2rem;">Modèles <em>d'invitations</em></h3>
+    </div>
+
+    <div class="emails-grid">
+      <!-- Email 1: Gentils Membres -->
+      <div class="email-card">
+        <div class="email-header">
+          <div class="email-brand">Club Med ψ — Exclusive Collection</div>
+          <div class="email-type">Clients G.M</div>
+        </div>
+        <div class="email-body">
+          <div class="email-subject">Objet du mail</div>
+          <div class="email-to"><strong>À :</strong> Anciens Gentils Membres Club Med &nbsp;|&nbsp; <strong>Destinataire :</strong> Clients fidèles</div>
+          <div class="email-content">
+            <h3>La Corse nous a manqué.<br><em>Nous revenons.</em></h3>
+            <p>Cher(e) Gentil(le) Membre,</p>
+            <p>Le Club Med revient sur l'Île de Beauté. Dès l'été 2028, notre Resort Exclusive Collection ouvrira à Calvi — 70 bungalows en bois et pierre de Balagne, nichés dans une pinède centenaire face au golfe. Luxe discret, nature préservée, esprit Club Med.</p>
+            <p>En tant que G.M, vous serez les premiers à pouvoir réserver.</p>
+            <div class="email-highlight">« La Corse, c'est la nature sauvage méditerranéenne dans toute sa splendeur. Ce resort, c'est notre promesse de vous y emmener — sans jamais la trahir. »</div>
+            <div class="email-meta-grid">
+              <div><strong>Inauguration</strong>12 juin 2028</div>
+              <div><strong>Avant-première G.M</strong>Mai 2028</div>
+              <div><strong>Ouverture</strong>Été 2028</div>
+              <div><strong>Tarif</strong>À partir de 2 000€/pers.</div>
+            </div>
+          </div>
+          <div class="email-cta">
+            <button class="copy-btn" onclick="this.textContent='✓ Copié !'; setTimeout(()=>this.textContent='Copier le mail',2000)">Copier le mail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email 2: Partenaires -->
+      <div class="email-card">
+        <div class="email-header">
+          <div class="email-brand">Club Med ψ — Exclusive Collection</div>
+          <div class="email-type">Partenaires</div>
+        </div>
+        <div class="email-body">
+          <div class="email-subject">Objet du mail</div>
+          <div class="email-to"><strong>À :</strong> Acteurs locaux & partenaires Balagne &nbsp;|&nbsp; <strong>Destinataire :</strong> Producteurs, entreprises</div>
+          <div class="email-content">
+            <h3>Cher partenaire,</h3>
+            <p>Nous sommes heureux de vous inviter à l'inauguration du Resort Club Med Calvi — Exclusive Collection, le vendredi 12 juin 2028. Cet événement marque bien plus qu'une ouverture : il représente le début d'une collaboration durable entre le Club Med et les acteurs économiques, culturels et environnementaux de la Balagne.</p>
+            <p>Votre présence à cette soirée est pour nous essentielle. Vous êtes l'un des visages de ce projet — vos produits seront à l'honneur dans nos restaurants.</p>
+            <div class="email-highlight">Au programme : dégustation de vos productions lors de l'atelier terroir (19h–21h), présentation aux journalistes présents, et mise en lumière de votre rôle dans notre démarche RSE.</div>
+            <div class="email-meta-grid">
+              <div><strong>Date</strong>Vendredi 12 juin 2028</div>
+              <div><strong>Accueil</strong>18h30 · Plage & Beach Bar</div>
+              <div><strong>Votre espace</strong>Salle de dégustation 19h–21h</div>
+              <div><strong>Parking</strong>Réservé sur site, Route de la Pinède</div>
+            </div>
+          </div>
+          <div class="email-cta">
+            <button class="copy-btn" onclick="this.textContent='✓ Copié !'; setTimeout(()=>this.textContent='Copier le mail',2000)">Copier le mail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email 3: VIP/Influenceurs -->
+      <div class="email-card">
+        <div class="email-header">
+          <div class="email-brand">Club Med ψ — Exclusive Collection</div>
+          <div class="email-type">VIP & Influenceurs</div>
+        </div>
+        <div class="email-body">
+          <div class="email-subject">Objet du mail</div>
+          <div class="email-to"><strong>À :</strong> Influenceurs voyage & lifestyle &nbsp;|&nbsp; <strong>Destinataire :</strong> Créateurs de contenu</div>
+          <div class="email-content">
+            <h3>Bonjour [Prénom],</h3>
+            <p>Tu as toujours su trouver les endroits avant les autres. Alors on avait envie que tu sois là pour celui-ci en premier.</p>
+            <p>Le 12 juin 2028, le Club Med ouvre son premier Resort Exclusive Collection en Corse — à Calvi, dans la pinède, face à la mer. 70 bungalows en bois et pierre locale. Un spa naturel. Un cinéma en plein air sous les étoiles. Et une soirée d'inauguration qu'on a conçue pour que tu aies envie d'en parler.</p>
+            <div class="email-highlight">Ce soir-là, la Corse t'ouvre ses portes. Dîner sous la pinède avec des producteurs locaux. Show de danse traditionnelle corse. Feu d'artifice silencieux sur le golfe. Et une nuit dans ton bungalow, offerte.</div>
+            <div class="email-meta-grid">
+              <div><strong>Quand</strong>12 juin 2028 · 18h30</div>
+              <div><strong>Où</strong>Calvi, Balagne, Corse</div>
+              <div><strong>Programme</strong>Soirée + nuit + brunch du 13</div>
+              <div><strong>Transport</strong>Vol A/R depuis Paris pris en charge</div>
+            </div>
+          </div>
+          <div class="email-cta">
+            <button class="copy-btn" onclick="this.textContent='✓ Copié !'; setTimeout(()=>this.textContent='Copier le mail',2000)">Copier le mail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email 4: Institutionnels -->
+      <div class="email-card">
+        <div class="email-header">
+          <div class="email-brand">Club Med ψ — Exclusive Collection</div>
+          <div class="email-type">Institutionnels</div>
+        </div>
+        <div class="email-body">
+          <div class="email-subject">Objet du mail</div>
+          <div class="email-to"><strong>À :</strong> Acteurs institutionnels &nbsp;|&nbsp; <strong>Destinataire :</strong> Élus, collectivités</div>
+          <div class="email-content">
+            <h3>Madame la Présidente<br>du Conseil Exécutif de Corse,</h3>
+            <p>C'est avec un immense honneur que le Club Med vous convie à l'inauguration officielle de son Resort Exclusive Collection à Calvi, marquant le retour de la marque au Trident sur le territoire corse après plusieurs années d'absence.</p>
+            <div class="email-highlight">Votre présence symbolisera l'alliance entre ambition touristique régionale et responsabilité environnementale, deux valeurs que nous partageons pleinement.</div>
+            <div class="email-meta-grid">
+              <div><strong>Date</strong>Vendredi 12 juin 2028</div>
+              <div><strong>Horaire</strong>18h30 — Plage & Beach Bar</div>
+              <div><strong>Lieu</strong>Route de la Pinède, 20260 Calvi</div>
+              <div><strong>Tenue</strong>Tenue de soirée élégante</div>
+            </div>
+            <p style="font-size:0.78rem;margin-top:0.5rem;">Un transfert depuis l'aéroport de Calvi-Sainte-Catherine peut être organisé sur demande. Une chambre vous est réservée pour la nuit du 12 au 13 juin.</p>
+          </div>
+          <div class="email-cta">
+            <button class="copy-btn" onclick="this.textContent='✓ Copié !'; setTimeout(()=>this.textContent='Copier le mail',2000)">Copier le mail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brochure -->
+    <div class="brochure-section">
+      <div class="brochure-text">
+        <span class="section-eyebrow">Supports de communication</span>
+        <h3>Brochure électronique<br><em>& papier</em></h3>
+        <p>La brochure promotionnelle accompagne les invitations officielles envoyées pour la soirée d'inauguration. Destinée aux invités institutionnels, partenaires, influenceurs, journalistes et acteurs locaux.</p>
+        <br>
+        <p>La version électronique est diffusée via les campagnes emailing, les réseaux sociaux et le site internet. La version papier renforce l'aspect exclusif et prestigieux de cette communication auprès des anciens G.M et de la clientèle fidèle de la marque.</p>
+        <br>
+        <a href="#" class="btn-primary" style="margin-top:0.5rem;" onclick="alert('Téléchargez votre brochure — remplacez ce lien par votre PDF brochure'); return false;">↓ &nbsp; Télécharger la brochure</a>
+      </div>
+      <div style="display:flex;justify-content:center;">
+        <div class="brochure-preview">
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold);margin-bottom:0.5rem;">Club Med ψ</div>
+            <div style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:1rem;">Exclusive Collection</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3rem;color:white;line-height:1;">CALVI</div>
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);letter-spacing:0.3em;margin:0.5rem 0;">— CORSE —</div>
+            <div style="font-size:0.7rem;color:var(--gold-light);margin-top:1.5rem;font-style:italic;font-family:'Cormorant Garamond',serif;">Le retour du luxe<br>au cœur de la nature corse</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMME D'OUVERTURE -->
+<section id="programme" class="programme-section">
+  <div class="programme-inner">
+    <div class="programme-header">
+      <span class="section-eyebrow" style="color:var(--gold);">12 Juin 2028</span>
+      <h2 class="section-title">Programme de la soirée<br><em>«&nbsp;A Festa di u Ritornu&nbsp;»</em></h2>
+      <p class="section-body" style="max-width:550px;margin:1rem auto 0;color:rgba(255,255,255,0.5);">Une soirée multi-espaces de 18h30 à 01h00. Six zones activées simultanément. 200 invités. L'esprit Club Med dans toute sa splendeur corse.</p>
+    </div>
+
+    <div class="programme-actes">
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">18h30</span>
+          <span class="time-sub">Acte I</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Plage & Beach Bar · Tous</div>
+          <div class="acte-title">Accueil des invités</div>
+          <div class="acte-desc">Arrivée directement sur la plage. Flûte de Nielluccio rosé pétillant pour les adultes, jus de clémentine corse et livret-jeu "Détective de la Corse" pour les enfants. Duo de musiciens corses en acoustique. Le coucher de soleil sur le golfe comme premier décor.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">19h00</span>
+          <span class="time-sub">Procession</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Village entier · Tous</div>
+          <div class="acte-title">Procession des lanternes vers la pinède</div>
+          <div class="acte-desc">Un G.O guide les invités depuis la plage vers la pinède centrale à travers les allées éclairées par des bougies en cire végétale. Les enfants tiennent les lanternes et ouvrent la marche. Un moment de transition poétique.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">19h30</span>
+          <span class="time-sub">Acte II</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Pinède centrale · Adultes</div>
+          <div class="acte-title">Dîner de gala sous la pinède</div>
+          <div class="acte-desc">Tables rondes de 8, mélangées. Menu corse : assiette du terroir, agneau de Haute-Corse rôti à la polenta de châtaigne, fiadone revisité au caramel de miel. Vins Patrimonio et Nielluccio. Un producteur de la Balagne attablé avec les invités. Menu végétalien disponible.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">20h00</span>
+          <span class="time-sub">Intermède</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Pinède · Moment fort</div>
+          <div class="acte-title">Chanteurs polyphoniques corses</div>
+          <div class="acte-desc">Un groupe de chanteurs polyphoniques corses (3 voix) entre dans la pinède en marchant entre les tables. Ils chantent "Dio Vi Salvi Regina" a cappella. 3 minutes de silence absolu, d'émotion collective. Le moment le plus fort de la soirée.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">21h00</span>
+          <span class="time-sub">Acte III</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Grande scène · Tous</div>
+          <div class="acte-title">Show «&nbsp;Corsica Viva&nbsp;» — 45 minutes</div>
+          <div class="acte-desc">6 danseurs de la troupe régionale de danse traditionnelle corse + 4 musiciens (guitare, mandoline, accordéon, caisse claire). Séquence interactive avec invités sur scène. Final avec toute la troupe en cercle, les invités frappant dans leurs mains en rythme.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">21h50</span>
+          <span class="time-sub">Multi-espaces</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Village entier · Circulation libre</div>
+          <div class="acte-title">Activation de tous les espaces</div>
+          <div class="acte-desc">Piscine naturelle : lounge corse avec cocktails (Cedratine spritz, mojito au myrte). Terrain de tennis : dancefloor surprise DJ fusion. Salle de dégustation : atelier terroir guidé par deux producteurs de la Balagne. Kids Club : Olympiades corses.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">23h00</span>
+          <span class="time-sub">Acte IV</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Pinède · Le final ensemble</div>
+          <div class="acte-title">Spectacle final des enfants</div>
+          <div class="acte-desc">«&nbsp;U Spettaculu di i Zitelli&nbsp;» — Les enfants présentent une mini-pièce sur la légende du maquis corse, en corse et en français. Costumes, répliques apprises dans la soirée, musique jouée en direct. Le moment le plus émouvant.</div>
+        </div>
+      </div>
+
+      <div class="acte-item">
+        <div class="acte-time">
+          <span class="time-label">23h15</span>
+          <span class="time-sub">Final</span>
+        </div>
+        <div class="acte-content">
+          <div class="acte-tag">Plage · Tous les invités</div>
+          <div class="acte-title">Feux d'artifice silencieux</div>
+          <div class="acte-desc">Feu d'artifice lumineux basse nuisance sonore (pétales colorés et fumigènes naturels) sur la plage. 8 minutes. Soundtrack : polyphonie corse diffusée sur casques audio. Les enfants en première ligne. Puis soirée libre jusqu'à 01h00.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <span class="section-eyebrow">Nous contacter</span>
+      <h2 class="section-title">Club Med <em>Calvi</em><br>La Chiapa</h2>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <h4>Adresse</h4>
+          <p>Route de la Pinède<br>20260 Calvi, Haute-Corse<br>Île de Beauté, France</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div class="contact-detail-text">
+          <h4>Email général</h4>
+          <p>contact@clubmedcalvi.com</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div class="contact-detail-text">
+          <h4>Téléphone</h4>
+          <p>+33 (0)4 95 XX XX XX</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📰</div>
+        <div class="contact-detail-text">
+          <h4>Relations presse</h4>
+          <p>presse@clubmedcalvi.com<br>+33 (0)1 53 35 35 53</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✈️</div>
+        <div class="contact-detail-text">
+          <h4>Accès</h4>
+          <p>Aéroport de Calvi-Sainte-Catherine<br>à 15 minutes du resort</p>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <span style="position:absolute;bottom:10px;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;">Calvi, Balagne · Corse</span>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <span class="section-eyebrow">Formulaire de contact</span>
+      <h3 class="section-title" style="font-size:2rem;margin-bottom:2rem;">Une <em>question ?</em></h3>
+
+      <div class="form-row">
+        <input type="text" placeholder="Prénom">
+        <input type="text" placeholder="Nom">
+      </div>
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Téléphone">
+      <select style="width:100%;background:white;border:1px solid #e0e0e0;padding:1rem 1.2rem;font-size:0.85rem;font-family:'Jost',sans-serif;color:var(--text-mid);margin-bottom:1rem;outline:none;appearance:none;">
+        <option>Objet de votre message</option>
+        <option>Réservation / Tarifs</option>
+        <option>Accréditation inauguration</option>
+        <option>Partenariat / Presse</option>
+        <option>Autre demande</option>
+      </select>
+      <textarea placeholder="Votre message..."></textarea>
+      <button type="submit" class="btn-primary" style="width:100%;padding:1.2rem;">Envoyer le message</button>
+      <p style="font-size:0.72rem;color:#aaa;margin-top:1rem;text-align:center;">Réponse sous 48h ouvrées · Projet scolaire fictif – B3 Tourisme</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Club Med ψ Calvi</div>
+        <p class="footer-desc">Resort Exclusive Collection · La Chiapa<br>Calvi, Balagne · Corse · Ouverture Juin 2028<br><br>Un village éco-conçu alliant luxe responsable, gastronomie locale et immersion dans la nature corse. En parfaite conformité avec la loi Littoral.</p>
+        <p style="font-size:0.7rem;color:rgba(255,255,255,0.2);font-style:italic;">Projet scolaire fictif — B3 Tourisme · École Internationale Tunon</p>
+      </div>
+      <div class="footer-col">
+        <h5>Le Village</h5>
+        <ul>
+          <li><a href="#village">Présentation</a></li>
+          <li><a href="#village">Hébergement</a></li>
+          <li><a href="#village">Restaurants</a></li>
+          <li><a href="#village">Activités</a></li>
+          <li><a href="#village">Bien-être & Spa</a></li>
+          <li><a href="#village">Kids Club</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Communication</h5>
+        <ul>
+          <li><a href="#social">Instagram</a></li>
+          <li><a href="#social">TikTok</a></li>
+          <li><a href="#presse">Communiqué de presse</a></li>
+          <li><a href="#invitations">Invitations</a></li>
+          <li><a href="#invitations">Brochure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Informations</h5>
+        <ul>
+          <li><a href="#programme">Programme inauguration</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">RSE & Engagements</a></li>
+          <li><a href="#">Plan du site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2028 Club Med Calvi – La Chiapa · Exclusive Collection</span>
+      <span class="footer-disclaimer">Projet scolaire fictif — aucun lien commercial avec Club Med SA</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Smooth nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#'+current ? 'var(--gold)' : '';
+  });
+});
+
+// Intersection observer for fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.village-card, .activity-pill, .atout-card, .email-card, .rse-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
